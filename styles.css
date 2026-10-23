@@ -18,6 +18,8 @@ body {
 }
 
 #pages {
+    position: sticky;
+    top: 0;
     background-color: #1e1e1e;
     width: 100%;
     height: auto;
@@ -50,7 +52,34 @@ body {
     .logo-container span {
         font-size: 30px;
     }
+
     #pages a {
         font-size: 12px;
+    }
+
+    .menu_icon {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .bar-1, .bar-2, .bar-3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+    .change .bar-1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    /* Fade out the second bar */
+    .change .bar-2 {opacity: 0;}
+
+    /* Rotate last bar */
+    .change .bar-3 {
+      transform: translate(0, -11px) rotate(45deg);
     }
 }
