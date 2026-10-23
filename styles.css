@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: #181818;
@@ -13,12 +13,34 @@ body {
 }
 
 .logo-container span {
-    font-size: x-large;
+    text-align: right;
+    font-size: 45px;
 }
 
-.logo-container img {
+#pages {
+    background-color: #1e1e1e;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#pages a {
+    font-family: "Raleway", sans-serif;
+    color: #d5d5d5;
+    text-decoration: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    text-align: center;
+    padding: 14px 16px;
+    float: left;
+}
+
+#pages a.active {
+    color: #d7db64;
+}
+
+#pages a:hover {
+    text-shadow: 0 0 10px #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.3s;
 }
