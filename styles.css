@@ -50,4 +50,7 @@ body {
     .logo-container span {
         font-size: 30px;
     }
+    #pages a {
+        font-size: 12px;
+    }
 }
